@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@400;500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+}
+
+.head-container{
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #69472F;
+    padding: 5px;
+}
+
+.head-container h1{
+    color: white;
+    font-family: Gloock;
+    font-size: 30px;
+}
+
+nav ul{
+    display: flex;
+    gap: 5rem;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 17px;
+    color: #ebd5c5;
+}
+
+nav a:hover{
+    background-color: #ebd5c5;
+    color: #69472F;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+}
+
+main p{
+    font-size: 15px;
+}
+
+.content-container{
+    flex: 5;
+    display: flex;
+    flex-flow: column;
+    gap: .5rem 2rem;
+}
+
+#tentang-kami{
+    flex: 1;
+    display: flex;
+}
+
+.content-about{
+    flex: 1 1;
+    text-align: center;
+}
+
+main h2{
+    text-align: center;
+}
+
+main .content-container .gambar{
+    flex: 1;
+    display: flex;
+}
+
+.gambar img{
+    min-width: 250px;
+    width: 300px;
+    margin: auto;
+}
+
+.fab{
+    display: flex;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #69472F;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.fas{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 14px;
+    border-color: rgb(172, 170, 170);
+    color: rgb(172, 170, 170);
+}
+
+.fab:hover{
+    background-color: #69472F;
+    color: white;
+}
+
+.card{
+    padding: 20px;
+}
+
+#kegiatan{
+    background-color: #ebd5c5;
+}
+
+#visi-misi{
+    background-color: #ebd5c5;
+}
+
+.activity{
+    flex: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+}
+
+.box{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(189, 188, 188);
+    border-width: .5px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+}
+
+.dokumentasi img{
+    width: 70%;
+    align-content: center;
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+.news-title{
+    text-align: center;
+}
+
+aside{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-style: solid;
+    border-color: #ebd5c5;
+    border-width: 3px;
+    border-radius: 40px;
+    width: 50%;
+}
+
+aside img{
+    width: 200px;
+}
+
+footer{
+    background-color: #69472F;
+    color: #ebd5c5;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .head-container{
+        flex-direction: column;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    #tentang-kami{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content-container .gambar{
+        order: -1;
+    }
+}
